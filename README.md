@@ -28,6 +28,8 @@ tail_fac(N, Acc) when N > 0 -> tail_fac(N-1, N*Acc).
 对于复杂递归函数的尾递归实现起来往往不太容易。仔细观之其实是有模板的。
 
 1. 加一个参数(accumulator)
-2. 函数外不再带有额外操作（如上文中的`N*fac(N-1)`)，所有额外信息尽可能依仗参数accumulator携带
+2. 函数外不再带有额外操作（如上文中的`N*fac(N-1)`)，所有额外操作都依仗参数accumulator携带
+
+注意！对于返回一个序列（如list）的函数，比如`sublist`函数，尾递归一开始会产生顺序相反的序列，需要加reverse或tail_reverse函数使之"反反得正"。
 
 
