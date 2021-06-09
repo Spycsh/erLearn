@@ -1,0 +1,1 @@
+ETS table作为ets模块的BIF(built-in function)，是一种in-memory的数据存储表。好处是访问只需常数时间。举例比如描述一个人{Name, Age, PhoneNumber, Email}。存储方式有set, ordered_set, bag, duplicated_bag
