@@ -7,3 +7,4 @@
 * [错误处理](https://github.com/Spycsh/erLearn/tree/main/%E9%94%99%E8%AF%AF)
 * [分布式](https://github.com/Spycsh/erLearn/tree/main/%E5%88%86%E5%B8%83%E5%BC%8F)
 * [OTP](https://github.com/Spycsh/erLearn/tree/main/OTP)
+* [CommonTest](https://github.com/Spycsh/erLearn/tree/main/CommonTest)
