@@ -1,5 +1,25 @@
 ## 错误处理
 
+### try... catch
+
+```erlang
+try
+  some_unsafe_function(),
+  {ok, FileHandle} = file:open("foo.txt", [read]),
+of
+  0 -> io:format("0");
+  N -> do_something_with(N)
+catch
+  oops -> got_throw_oops;
+  throw:Other -> {got_throw, Other};
+  exit:Reason -> {got_exit, Reason};
+  error:Reason -> {got_error, Reason};
+  _:_ -> gg
+after
+  file:close(FileHandle)
+end
+```
+
 ### link
 
 ```erlang
